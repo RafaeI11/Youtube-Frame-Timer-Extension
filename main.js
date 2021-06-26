@@ -4,6 +4,7 @@ window.onload = function generate_stuff() {
 	document.getElementById("centerbar").innerHTML = stuff + document.getElementById("centerbar").innerHTML
 }
 
+/* From now on all the code is from https://github.com/Mango0x45/no-ad-retimer */
 /* Compute the total duration of the run. */
 function compute()
 {
