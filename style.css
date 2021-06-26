@@ -1,0 +1,35 @@
+#framerate {
+    width: 30px;
+}
+.retime {
+    border-radius: 2px;
+    outline: 0 !important;
+    background-color: #000000;
+    border-color: rgba(255,255,255,.13);
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+}
+.just_a_little_padding {
+ 	padding-right: 3px;
+    padding-left: 3px;
+}
+#mod_message_button {
+    cursor: pointer;
+    text-shadow: none;
+    color: rgba(0, 0, 0, 1) !important;
+    background-color: #EDEDED;
+    border-color: #EDEDED;
+    outline: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .25rem;
+    margin-left: 5px;
+}
+#mod_message {
+ 	width: 750px;   
+}
+.frame_input {
+    width: 253px;
+}
