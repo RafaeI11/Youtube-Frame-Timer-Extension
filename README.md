@@ -8,4 +8,4 @@ For it to work you'll need to install these chrome extensions:
 
 After downloading Stilish, click on the extension -> 3 dots on the top-right corner -> create new style. Copy [this code](https://github.com/RafaeI11/Youtube-Frame-Timer-src-Extension-/blob/main/style.css) and paste it there, then click on specify and select "URLs matching this regexp" and input `https:\/\/www\.speedrun\.com\/the_game_you_moderate\/run.+`  (example `https:\/\/www\.speedrun\.com\/mcbe\/run.+`) and click on save.
 
-Now for the JavaScript, click on the extension -> New Regxp -> paste `https:\/\/www\.speedrun\.com\/the_game_you_moderate\/run.+` -> add -> paste [this code](https://github.com/RafaeI11/Youtube-Frame-Timer-src-Extension-/blob/main/main.js) and click on the save button at the top-left corner
+Now for the JavaScript, click on the extension -> New Regexp -> paste `https:\/\/www\.speedrun\.com\/the_game_you_moderate\/run.+` -> add -> paste [this code](https://github.com/RafaeI11/Youtube-Frame-Timer-src-Extension-/blob/main/main.js) and click on the save button at the top-left corner
