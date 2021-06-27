@@ -1,8 +1,10 @@
 /* Creates the HTML tags */
-window.onload = function generate_stuff() {
+function generate_stuff() {
 	const stuff = "<div class=\"panel\"><label for=\"framerate\" class=\"just_a_little_padding\">Framerate: </label><input type=\"text\" id=\"framerate\" class=\"retime\" value=\"30\" onchange='check_fps(event)'><label for=\"startobj\" class=\"just_a_little_padding\">Starting frame: </label><input type=\"text\" id=\"startobj\" class=\"retime frame_input\" onchange='parse_time(event)'><label for=\"endobj\" class=\"just_a_little_padding\">Ending frame: </label><input type=\"text\" id=\"endobj\" class=\"retime frame_input\" onchange='parse_time(event)'><input type=\"text\" class=\"retime\" id=\"mod_message\" readonly disabled></input><button id=\"mod_message_button\" disabled onclick=\"copy_mod_message()\">Copy</button></div>"
 	document.getElementById("centerbar").innerHTML = stuff + document.getElementById("centerbar").innerHTML
 }
+/* window.onload method doesn't work on firefox, while this works on both browsers */
+function generate_stuff()
 
 /* From now on all the code is from https://github.com/Mango0x45/no-ad-retimer */
 /* Compute the total duration of the run. */
