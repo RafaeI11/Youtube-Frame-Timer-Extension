@@ -103,19 +103,3 @@ function parse_time(event)
 		compute();
 }
 
-/* Change the users preferred theme. */
-function change_theme()
-{
-	const theme_switch = document.getElementById("page_theme");
-	const want = theme_switch.checked ? "dark" : "light";
-
-	document.documentElement.setAttribute("theme", want);
-	localStorage.setItem("theme", want);
-}
-
-/* Automatically select the users preferred theme */
-const theme = localStorage.getItem("theme");
-if (theme) {
-	document.documentElement.setAttribute("theme", theme);
-	document.getElementById("page_theme").checked = (theme == "dark");
-}
