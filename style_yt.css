@@ -24,21 +24,6 @@
     width: 200px;
     margin-right: 50px;
 }
-/* To do: remake buttons styling, they look terrible */
-.buttons {
-    cursor: pointer;
-    text-shadow: none;
-    color: rgba(0, 0, 0, 1) !important;
-    background-color: #EDEDED;
-    border-color: #EDEDED;
-    outline: 0 !important;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: .25rem;
-    padding: 3px 139px 3px 139px;
-    margin-left: 5px;
-    margin-bottom: 15px;
-}
 #framerate {
     width: 30px;
     margin-right: 250px;
@@ -51,4 +36,18 @@
 #mod_message {
  	width: 300px;
     margin-left: 5px;
+}
+#mod_message_button {
+    cursor: pointer;
+    text-shadow: none;
+    color: rgba(0, 0, 0, 1) !important;
+    background-color: #EDEDED;
+    border-color: #EDEDED;
+    outline: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .25rem;
+    padding: 3px 139px 3px 139px;
+    margin-left: 5px;
+    margin-bottom: 15px;
 }
