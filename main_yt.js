@@ -1,14 +1,6 @@
-/* Creates the HTML tags. */
-	const stuff = "<div class=\"panel\"><label for=\"framerate\" class=\"just_a_little_padding\">Framerate: </label><input type=\"text\" id=\"framerate\" class=\"retime\" value=\"30\" onchange='check_fps(event)'><label for=\"startobj\" class=\"just_a_little_padding\">Starting frame: </label><input type=\"text\" id=\"startobj\" class=\"retime frame_input\" onchange='parse_time(event)'><label for=\"endobj\" class=\"just_a_little_padding\">Ending frame: </label><input type=\"text\" id=\"endobj\" class=\"retime frame_input\" onchange='parse_time(event)'><input type=\"text\" class=\"retime\" id=\"mod_message\" readonly disabled></input><button id=\"mod_message_button\" class=\"buttons\" disabled onclick=\"copy_mod_message()\">Copy</button><button class=\"buttons\" onclick=\"change_fps()\">Change Framerate</button></div>"
+/* Creates the HTML tags */
+	const stuff = "<div class=\"panel\"><label for=\"framerate\" class=\"just_a_little_padding\">Framerate: </label><input type=\"text\" id=\"framerate\" class=\"retime\" value=\"30\" onchange='check_fps(event)'><label for=\"startobj\" class=\"just_a_little_padding\">Starting frame: </label><input type=\"text\" id=\"startobj\" class=\"retime frame_input\" onchange='parse_time(event)'><label for=\"endobj\" class=\"just_a_little_padding\">Ending frame: </label><input type=\"text\" id=\"endobj\" class=\"retime frame_input\" onchange='parse_time(event)'><input type=\"text\" class=\"retime\" id=\"mod_message\" readonly disabled></input><button id=\"mod_message_button\" disabled onclick=\"copy_mod_message()\">Copy</button></div>"
 	document.getElementById("offer-module").innerHTML = stuff + document.getElementById("offer-module").innerHTML
-
-/* Changes the fps on the input box to the video fps if the "Stats for nerds" window is opened. */
-function change_fps() {
-let fps_value = document.querySelector("#movie_player > div.html5-video-info-panel > div > div:nth-child(3) > span").innerText
-fps_value = fps_value.split("@");
-fps_value = fps_value[1].split(" ");
-document.getElementById("framerate").value = fps_value[0];
-}
 
 /* From now on all the code is from https://github.com/Mango0x45/no-ad-retimer */
 /* Compute the total duration of the run. */
